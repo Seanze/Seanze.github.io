@@ -57,7 +57,7 @@
     }
   </script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
 
 
   <body>
@@ -143,7 +143,8 @@ MathJax = {
       </div>
       <div class="markdown-body">
         <p>欢迎来到Seanze的博客首页,初次写博客，不知道该说些什么，那就这样吧。</p>
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2>
+<h2 id="学习"><a class="header-anchor" href="#学习">¶</a>学习</h2>
+
       </div>
       
         <div class="prev-or-next">
@@ -514,5 +515,14 @@ MathJax = {
 
       </div>
     </div>
-  </body>
+  <!-- hexo injector body_end start --><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --></body>
 </html>
